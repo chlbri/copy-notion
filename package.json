@@ -8,8 +8,6 @@
     "start": "next start",
     "next-lint": "next lint",
     "prettier": "prettier --write \"{src/**/*,App}.{ts,tsx}\"",
-    "eslint": "eslint \"{src/**/*,App}.{ts,tsx}\"",
-    "eslint-fix": "pnpm run eslint --fix",
     "gitpod-down": "kill $(sudo lsof -t -i:3000)"
   },
   "dependencies": {
@@ -58,5 +56,6 @@
     "ts-jest": "^27.1.3",
     "typescript": "^4.5.5"
   },
-  "repository": "https://github.com/chlbri/gitpod-nexts.git"
+  "repository": "https://github.com/chlbri/copy-notion.git",
+  "description": "https://github.com/chlbri/copy-notion.git"
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import Document, {
   DocumentContext,
   Head,
@@ -5,18 +6,13 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document';
-import {ReactElement, JSXElementConstructor, ReactFragment} from 'react';
+import React from 'react';
+import { NavBar } from '../components/Home/NavBar';
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext): Promise<{
-    html: string;
-    head?: JSX.Element[];
-    styles?:
-      | ReactElement<any, string | JSXElementConstructor<any>>[]
-      | ReactFragment;
-  }> {
+  static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-    return {...initialProps};
+    return { ...initialProps };
   }
 
   render(): JSX.Element {
@@ -25,7 +21,9 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="icon" type="image/x-icon" href="favicon.ico" />
         </Head>
-        <body>
+
+        <body className="container mx-auto mt-3">
+          <NavBar />
           <Main />
           <NextScript />
         </body>
