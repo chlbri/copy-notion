@@ -27,5 +27,6 @@ rules:
   "@typescript-eslint/no-explicit-any": off
   '@typescript-eslint/explicit-module-boundary-types': off
   linebreak-style: 0
+  "import/no-extraneous-dependencies": 1
   quotes: 0
   semi: 0

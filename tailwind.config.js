@@ -7,12 +7,11 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
-      // screens: {
-      //   '3xl': '2000px',
-      // },
+      screens: {
+        '3xl': '1600px',
+        '4xl': '2000px',
+      },
       aspectRatio: {
-        '4/3': '4 / 3',
-        '3/4': '3 / 4',
         'ipad-landscape': '4 / 3',
         'ipad-portrait': '3 / 4',
       },

@@ -22,7 +22,7 @@ export default class MyDocument extends Document {
           <link rel="icon" type="image/x-icon" href="favicon.ico" />
         </Head>
 
-        <body className="container mx-auto mt-3">
+        <body className="container mx-auto mt-3 min-w-[350px]">
           <NavBar />
           <Main />
           <NextScript />

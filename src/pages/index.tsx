@@ -15,11 +15,12 @@ const Home_Page: FC = () => (
       <Hero />
     </div>
     <div className="w-full lg:w-2/5 p-10 md:p-0">
-      <div className="relative w-full aspect-ipad-landscape mx-auto md:mx-0">
+      <div className="relative w-full aspect-[3/2] mx-auto md:mx-0">
         <Image
           src="/images/home-page-hero-refreshed-v3.png"
           layout="fill"
           alt="WorkSpace"
+          priority
         />
       </div>
     </div>
